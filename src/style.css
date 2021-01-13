@@ -1,0 +1,32 @@
+* {
+  text-align: center;
+}
+input[type="number"] {
+  border: none;
+  border-bottom: 1px solid black;
+  margin-bottom: 0.4em;
+  outline: none;
+}
+
+input[type="text"] {
+  border: none;
+  /* margin: 0; */
+  padding: 0;
+  font-size: 1em;
+}
+#start > p {
+  display: inline;
+  font-size: 2em;
+}
+#start > button {
+  background-color: transparent;
+  border: none;
+  font-size: 1em;
+  outline: none;
+}
+#start > button:hover {
+  cursor: pointer;
+}
+#start > button:active {
+  font-size: 1.2em;
+}
