@@ -1,25 +1,20 @@
 import React, { useContext } from "react";
 import { PlayerContext } from "./playerContext";
 
-const Score = () => {
-  const { inputRef, handleNum, num, handleSubmit, arr } = useContext(
-    PlayerContext
-  );
-
+const Score = (props) => {
+  const {  handleNum, handleSubmit } = useContext(PlayerContext);
   return (
     <>
       <input
-        ref={inputRef}
-        name="num"
-        value={num}
+        // name={props.name}
+        value={props.value}
         onChange={handleNum}
         type="number"
       />
       <br />
-      <button onClick={handleSubmit}>Add</button>
-      {arr.map(e => (
-        <p>{e}</p>
-      ))}
+      <button name={props.name} onClick={handleSubmit}>
+        Add
+      </button>
     </>
   );
 };
